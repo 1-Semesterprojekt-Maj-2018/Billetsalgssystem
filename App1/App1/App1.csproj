@@ -99,8 +99,17 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Domain\DateChoice.xaml.cs">
-      <DependentUpon>DateChoice.xaml</DependentUpon>
+    <Compile Include="Views\Domain\Frontpage.xaml.cs">
+      <DependentUpon>Frontpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Domain\Payment.xaml.cs">
+      <DependentUpon>Payment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Domain\SeatReservation.xaml.cs">
+      <DependentUpon>SeatReservation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Domain\ThankYouPage.xaml.cs">
+      <DependentUpon>ThankYouPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -132,7 +141,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\Domain\DateChoice.xaml">
+    <Page Include="Views\Domain\Frontpage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Domain\Payment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Domain\SeatReservation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Domain\ThankYouPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
