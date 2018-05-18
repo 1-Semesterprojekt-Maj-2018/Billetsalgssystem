@@ -17,13 +17,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto" MinWidth="200" />
+            <ColumnDefinition Width="auto" MinWidth="200" />
+            <ColumnDefinition Width="auto" MinWidth="200" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto" MinHeight="200" />
+            <RowDefinition Height="auto" MinHeight="200" />
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Column="0" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}">
