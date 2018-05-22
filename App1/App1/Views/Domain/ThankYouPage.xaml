@@ -8,16 +8,21 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RenderTransformOrigin="0.503,0.396">
-        <TextBlock Text="Tak for din bestilling" FontSize="72" HorizontalAlignment="Center" Margin="0 200 0 0"/>
-        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" Margin="0,367,0,0" Width="356"/>
-        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,565,0,0"/>
-        <TextBlock Text="film:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 50 180 0" />
-        <TextBlock Text="tid:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 100 180 0"/>
-        <TextBlock Text="sal:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 150 180 0"/>
-       
-        <TextBlock Text="Række:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 200 180 0"/>
-        <TextBlock Text="sæde:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 250 180 0"/>
-        <TextBlock Text="total:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 900 180 0"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="331*"/>
+            <RowDefinition Height="669*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Tak for din bestilling" FontSize="72" HorizontalAlignment="Center" Margin="0,200,0,0" Grid.RowSpan="2" VerticalAlignment="Top"/>
+        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="50" Margin="0,35.996,0,0" Width="356" Grid.Row="1"/>
+        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,233.996,0,0" Grid.Row="1"/>
+        <TextBlock Text="Kvittering" FontSize="36" HorizontalAlignment="Right" Margin=" 0 50 100 0" Grid.RowSpan="2" VerticalAlignment="Stretch" />
+        <TextBlock Text="film:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 150 180 0" Grid.RowSpan="2" VerticalAlignment="Stretch" />
+        <TextBlock Text="tid:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 200 180 0" Grid.RowSpan="2" VerticalAlignment="Stretch"/>
+        <TextBlock Text="sal:" FontSize="36" HorizontalAlignment="Right" Margin="0,250,179,0" Grid.RowSpan="2" VerticalAlignment="Stretch"/>
+
+        <TextBlock Text="Række:" FontSize="36" HorizontalAlignment="Right" Margin=" 0 300 180 0" Grid.RowSpan="2" VerticalAlignment="Stretch"/>
+        <TextBlock Text="sæde:" FontSize="36" HorizontalAlignment="Right" Margin="0,18.996,179,0" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <TextBlock Text="total:" FontSize="36" HorizontalAlignment="Right" Margin="0,568.996,179,0" Grid.Row="1" VerticalAlignment="Stretch"/>
 
 
 
