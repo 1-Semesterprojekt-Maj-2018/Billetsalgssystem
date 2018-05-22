@@ -31,9 +31,9 @@
         </ListView>
 
         <!-- Navn, Dato og antal view -->
-        <StackPanel Grid.Row="0" Grid.Column="1" Style="{StaticResource }"
-            
-            <!-- Navn -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Style="{StaticResource }" >
+
+        <!-- Nordisk Bio navn -->
             <StackPanel Style="{StaticResource }">
                 <TextBlock Style="{StaticResource }" Text="Nordisk Biograf"/>
             </StackPanel>
@@ -60,5 +60,6 @@
 
 
         </StackPanel>
+
     </Grid>
 </Page>
