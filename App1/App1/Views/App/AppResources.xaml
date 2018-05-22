@@ -46,6 +46,17 @@
         <Setter Property="Margin" Value="5,5,5,5"/>
         <Setter Property="Spacing" Value="5"/>
     </Style>
+
+    
+
+    <Style x:Key="StackPanelItemTemplateStyle2" TargetType="Stackpanel">
+        <Setter Property="Orientation" Value="Vertical"/>
+        <Setter Property="Margin" Value="10,10,10,10"/>
+        <Setter Property="Spacing" Value="5"/>
+    </Style>
+
+    
+
     <Style x:Key="StackPanelDetailsMidStyle" TargetType="StackPanel">
         <Setter Property="Orientation" Value="Vertical"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
@@ -75,13 +86,23 @@
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
+
     <Style x:Key="TextBlockDetailsHeaderStyle" TargetType="TextBlock">
-        <Setter Property="FontSize" Value="24"/>
+        <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Width" Value="200"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Margin" Value="5,5,5,5"/>
     </Style>
+
+    <Style x:Key="TextBlockNordiskBiograf" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="50">
+        <Setter Property="FontWeight" Value="ExtraBlack"/>
+        <Setter Property="Width" Value="500"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10,10,10,10>
+    </Style>
+
     <Style x:Key="TextBlockDetailsPreSliderStyle" TargetType="TextBlock">
         <Setter Property="FontSize" Value="24"/>
         <Setter Property="Width" Value="50"/>
