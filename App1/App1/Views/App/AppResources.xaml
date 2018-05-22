@@ -86,6 +86,7 @@
         <Setter Property="HorizontalAlignment" Value="Left"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
+
     <Style x:Key="TextBlockDetailsHeaderStyle" TargetType="TextBlock">
         <Setter Property="FontSize" Value="20"/>
         <Setter Property="FontWeight" Value="Bold"/>
