@@ -9,5 +9,56 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <ListView Grid.Row="0" Grid.Column="0" Style="{StaticResource }"
+                  ItemsSource="{Binding }"
+                  SelectedItem="{Binding }">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Style="{StaticResource}">
+                        <!-- Film, dato/antal og Betaling -->
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Navn, Dato og antal view -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Style="{StaticResource }"
+            
+            <!-- Navn -->
+            <StackPanel Style="{StaticResource }">
+                <TextBlock Style="{StaticResource }" Text="Nordisk Biograf"/>
+            </StackPanel>
+
+            <!-- Dato og tid -->
+            <StackPanel Style="{StaticResource }">
+                <TextBlock Style="{StaticResource }" 
+                           Text="Date og tidspunkt" />
+                <CalendarDatePicker Style="{StaticResource CalendarDatePickerStyle}"
+                                    Date="{Binding ItemDetails.DateForShow, Mode=TwoWay}"/>
+                <TimePicker Style="{StaticResource TimePickerStyle}"
+                            Time="{Binding ItemDetails.TimeForShow, Mode=TwoWay}"/>
+            </StackPanel>
+
+            <!-- Antal personer -->
+            <StackPanel Style="{StaticResource StackPanelDetailsItemStyle}">
+                <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" 
+                           Text="Antal personer" />
+                <TextBlock Style="{StaticResource TextBlockDetailsPreSliderStyle}" 
+                           Text="{Binding ItemDetails.NoOfSeats}" />
+                <Slider Style="{StaticResource SliderStyle}" Minimum="1" Maximum="8"
+                        Value="{Binding ItemDetails.NoOfSeats, Mode=TwoWay}" />
+            </StackPanel>
+
+
+        </StackPanel>
     </Grid>
 </Page>
