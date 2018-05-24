@@ -20,14 +20,15 @@
         option, e.g. opening a specific view. The Frame element contained in the control 
         is filled with the content of the selected view 
         NB: Also note the (single line of) code added in MainPage.xaml.cs -->
-    <NavigationView Header="Billetbestilling"
+    <NavigationView Header="Nordisk Biograf"
                     Background="{ThemeResource SystemControlAcrylicWindowBrush}"
                     OpenPaneLength="150"
                     SelectedItem ="{Binding SelectedMenuItem, Mode=OneWay}">
         <NavigationView.MenuItems>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Movies"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="People" Content="Theaters"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="OtherUser" Content="Shows"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Film" Tag="OpenMovieView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Calendar" Content="Dato/Antal" Tag="OpenTheaterView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Paste" Content="Betaling" Tag="OpenShowView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Page" Content="Kvittering" Tag="OpenShowView"/>
         </NavigationView.MenuItems>
 
         <Frame x:Name="AppFrame">
