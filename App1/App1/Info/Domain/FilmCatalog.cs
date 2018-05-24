@@ -8,17 +8,10 @@ using App1.Info.Base;
 
 namespace App1.Info.Domain
 {
-    public class FilmCatalog : CatalogBase
+    public class FilmCatalog : CatalogBase<Film>
     {
         #region Constructor
 
-            
-
-            
-            
-            
-
-        
 
         #endregion
     }
