@@ -7,7 +7,67 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../App/AppResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+
+        <ListView Grid.Row="0" Grid.Column="0" Style="{StaticResource ListViewStyle}"
+                  ItemsSource="{Binding }"
+                  SelectedItem="{Binding }">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Style="{StaticResource StackPanelItemTemplateStyle}">
+                        <!-- Film, dato/antal og Betaling -->
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                        <TextBlock Style="{StaticResource }" Text="{Binding }" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Navn, Dato og antal view -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Style="{StaticResource StackPanelItemTemplateStyle}" >
+
+            <!-- Navn -->
+            <StackPanel Style="{StaticResource StackPanelItemTemplateStyle }" Height="224">
+                <TextBlock Style="{StaticResource TextBlockNordiskBiograf}" Text="Nordisk Biograf" Margin="365,105,263,105" Width="Auto"/>
+            </StackPanel>
+
+            <!-- Dato og tid -->
+            <StackPanel Style="{StaticResource StackPanelDetailsItemStyle}" Height="115">
+                <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" 
+                           Text="Dato/tidspunkt" />
+                <CalendarDatePicker Style="{StaticResource CalendarDatePickerStyle}"
+                                    Date="{Binding ItemDetails.DateForShow, Mode=TwoWay}"/>
+                <TimePicker Style="{StaticResource TimePickerStyle}"
+                            Time="{Binding ItemDetails.TimeForShow, Mode=TwoWay}"/>
+            </StackPanel>
+
+            <!-- Antal personer -->
+            <StackPanel Style="{StaticResource StackPanelDetailsItemStyle}" Height="92">
+                <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" 
+                           Text="Antal personer" />
+                <TextBlock Style="{StaticResource TextBlockItemHeaderStyle}" 
+                           Text="{Binding ItemDetails.NoOfSeats}" />
+                <Slider Style="{StaticResource SliderStyle}" Minimum="1" Maximum="8"
+                        Value="{Binding ItemDetails.NoOfSeats, Mode=TwoWay}" />
+            </StackPanel>
+
+
+        </StackPanel>
 
     </Grid>
 </Page>
