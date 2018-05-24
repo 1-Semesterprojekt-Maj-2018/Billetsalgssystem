@@ -25,9 +25,9 @@
                     OpenPaneLength="150"
                     SelectedItem ="{Binding SelectedMenuItem, Mode=OneWay}">
         <NavigationView.MenuItems>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Movies" Tag="OpenMovieView"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="People" Content="Theaters" Tag="OpenTheaterView"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="OtherUser" Content="Shows" Tag="OpenShowView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Movies"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="People" Content="Theaters"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="OtherUser" Content="Shows"/>
         </NavigationView.MenuItems>
 
         <Frame x:Name="AppFrame">
