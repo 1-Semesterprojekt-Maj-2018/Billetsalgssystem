@@ -1,13 +1,92 @@
 ﻿<Page
-    x:Class="App1.Views.Domain.Payment"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App1.Views.Domain"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+  x:Class="App1.Views.Domain.Payment"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../App/AppResources.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1000" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" MinWidth="200"/>
+            <ColumnDefinition Width="Auto" MinWidth="200"/>
+            <ColumnDefinition Width="Auto" MinWidth="200"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="200"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Column="0" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}" Grid.ColumnSpan="3" Margin="0,0,1000,0">
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Grid.Row="0" Style="{StaticResource StackPanelItemTemplateStyle}" Margin="0,0,0,0" >
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Nordisk Biograf" FontSize="15"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld personlige oplysninger" FontSize="10" Width="500"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Fulde navn:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Adresse:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Postnummer:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Email:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Telefon Nr.:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld dine betalingsoplysninger" FontSize="10" />
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Vælg betalingsmetode:" FontSize="10" Width="200" Margin="0,0,0,0"/>
+
+            <Grid VerticalAlignment="Top" Width="500">
+                <Button Width="60" Height="40" Margin="0,0,225,0" HorizontalAlignment="Stretch" Background="White">
+                    <Image Source="..\App\img\Dankort.png" Width="40" Height="40"/>
+                </Button>
+                <Button Width="60" Height="40" Margin="0,0,75,0"  HorizontalAlignment="Stretch" Background="White">
+                    <Image Source="..\App\img\Mastercard.jpg" Stretch="UniformToFill"/>
+                </Button>
+                <Button Width="60" Height="40" Margin="75,0,0,0" HorizontalAlignment="Stretch" Background="White">
+                    <Image Source="..\App\img\Mobilepay.png" Stretch="UniformToFill"/>
+                </Button>
+                <Button Width="60" Height="40" Margin="225,0,0,0" HorizontalAlignment="Stretch" Background="White">
+                    <Image Source="..\App\img\Visa.jpg" Stretch="UniformToFill"/>
+                </Button>
+            </Grid>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Kortnummer:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Kortets udløb MM/ÅÅ:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" Text="  /  " FontSize="10"/>
+
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="CVV:" FontSize="10" Width="500"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" FontSize="10"/>
+
+            <StackPanel Margin="0,0,0,0">
+                <Button Content="Videre" Background="LightBlue" HorizontalAlignment="Stretch" Width="500"/>
+            </StackPanel>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="2" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}">
+            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Oversigt over valgte film" FontSize="10"  Width="500"/>
+        </StackPanel>
 
     </Grid>
 </Page>
+
