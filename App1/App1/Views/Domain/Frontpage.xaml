@@ -8,6 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="292,232,0,0"/>
+        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,232,0,0" />
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="292,568,0,0"/>
+        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,568,0,0"/>
+        <TextBlock Text=" Info om filmen" FontSize="36" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,110,694" RenderTransformOrigin="0.486,0.583"/>
+        <Button Content="Ok" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,43,32" Width="100"/>
+        <Button Content="Tilbage" HorizontalAlignment="left" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,0,32" Width="120"/>
     </Grid>
 </Page>
