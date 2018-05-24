@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Info\Base\CatalogBase.cs" />
+    <Compile Include="Info\Domain\FilmCatalog.cs" />
+    <Compile Include="Info\Domain\Film.cs" />
     <Compile Include="ViewModels\App\AppViewModel.cs" />
     <Compile Include="Views\App\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

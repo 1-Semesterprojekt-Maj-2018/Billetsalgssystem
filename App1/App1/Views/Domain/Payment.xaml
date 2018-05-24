@@ -19,6 +19,7 @@
             <ColumnDefinition Width="Auto" MinWidth="200"/>
             <ColumnDefinition Width="Auto" MinWidth="200"/>
             <ColumnDefinition Width="Auto" MinWidth="200"/>
+            
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
