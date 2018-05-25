@@ -25,6 +25,9 @@ namespace App1.Info.Domain
             _films.Add(new Film("Solo star wars", "Længde: 215 min", "Image/SOlo starwars.jpg"));
             _films.Add(new Film("Sankt bernhard syndikatet", "Længde: 140 min", "Image/sankt-bernhard-syndikatet.jpg"));
             _films.Add(new Film("Mit grønland", "Længde: 134 min", "Image/mit-groenland-plakat.jpg"));
+            _films.Add(new Film("Warcraft", "Længde: 142 min", "Image/Warcraft.jpg"));
+            _films.Add(new Film("De blinkende lygter", "længde: 132 min", "Image/De blinkende lygter.jpg"));
+
 
         }
         public List<Film> Films
