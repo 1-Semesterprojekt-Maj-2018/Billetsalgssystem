@@ -43,10 +43,11 @@
         <!-- Info -->
             <StackPanel Orientation="Horizontal" Background="BlanchedAlmond">
                 <Image Source="{Binding SelectedFilm.Billede}"
-                       VerticalAlignment="Top" Margin="10,10,10,10" Height="200" Width="200"/>
+                       VerticalAlignment="Top" Margin="10,10,10,10" Height="950" Width="200"/>
                 <StackPanel Margin="20,20,20,20">
                     <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Titel}"/>
                     <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Info}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Beskrivelse}" Height="700"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

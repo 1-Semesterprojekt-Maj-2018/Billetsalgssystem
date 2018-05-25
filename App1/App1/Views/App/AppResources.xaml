@@ -85,11 +85,11 @@
         <Setter Property="Margin" Value="5,5,5,5"/>
     </Style>
 
-    <Style x:Key="TextBlockNordiskBiograf" TargetType="TextBlock">
+    <Style x:Key="TextBlockbeskrivelse" TargetType="TextBlock">
         <Setter Property="FontSize" Value="50"/>
         <Setter Property="FontWeight" Value="ExtraBlack"/>
         <Setter Property="Width" Value="500"/>
-        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="left"/>
         <Setter Property="Margin" Value="10,10,10,10"/>
     </Style>
 

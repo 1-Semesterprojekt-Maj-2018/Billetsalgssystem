@@ -16,14 +16,16 @@ namespace App1.Info.Domain
         private string _titel;
         private string _info;
         private string _billede;
+        private string _beskrivelse;
         #endregion
 
         #region Constuctor
-        public Film(string titel, string info, string billede)
+        public Film(string titel, string info, string billede, string beskrivelse)
         {
             _titel = titel;
             _info = info;
             _billede = billede;
+            _beskrivelse = beskrivelse;
         }
         #endregion
 
@@ -43,6 +45,11 @@ namespace App1.Info.Domain
         public string Billede
         {
             get { return _billede; }
+        }
+
+        public string Beskrivelse
+        {
+            get { return _beskrivelse; }
         }
         #endregion
     }
