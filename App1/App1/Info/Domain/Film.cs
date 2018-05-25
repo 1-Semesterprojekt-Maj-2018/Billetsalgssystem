@@ -12,6 +12,7 @@ namespace App1.Info.Domain
  public class Film
     {
         #region instance fields
+
         private string _titel;
         private double _længde;
         private string _billede;
@@ -27,6 +28,8 @@ namespace App1.Info.Domain
         #endregion
 
         #region Properties
+
+
         public string Titel
         {
             get { return _titel; }
