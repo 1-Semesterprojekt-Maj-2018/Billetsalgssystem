@@ -56,16 +56,16 @@
 
             <Grid VerticalAlignment="Top" Width="500">
                 <Button Width="60" Height="40" Margin="0,0,225,0" HorizontalAlignment="Stretch" Background="White">
-                    <Image Source="..\App\img\Dankort.png" Width="40" Height="40"/>
+                    <Image Source="..\Assets\img\Dankort.png" Width="40" Height="40"/>
                 </Button>
                 <Button Width="60" Height="40" Margin="0,0,75,0"  HorizontalAlignment="Stretch" Background="White">
-                    <Image Source="..\App\img\Mastercard.jpg" Stretch="UniformToFill"/>
+                    <Image Source="..\Assets\img\Mastercard.jpg" Stretch="UniformToFill"/>
                 </Button>
                 <Button Width="60" Height="40" Margin="75,0,0,0" HorizontalAlignment="Stretch" Background="White">
-                    <Image Source="..\App\img\Mobilepay.png" Stretch="UniformToFill"/>
+                    <Image Source="..\Assets\img\Mobilepay.png" Stretch="UniformToFill"/>
                 </Button>
                 <Button Width="60" Height="40" Margin="225,0,0,0" HorizontalAlignment="Stretch" Background="White">
-                    <Image Source="..\App\img\Visa.jpg" Stretch="UniformToFill"/>
+                    <Image Source="..\Assets\img\Visa.jpg" Stretch="UniformToFill"/>
                 </Button>
             </Grid>
 
