@@ -7,12 +7,13 @@
   mc:Ignorable="d">
 
     <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="../App/AppResources.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+      <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+          <ResourceDictionary Source="../App/AppResources.xaml"/>
+        </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
     </Page.Resources>
+ 
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1000" VerticalAlignment="Bottom">
         <Grid.ColumnDefinitions>
