@@ -19,7 +19,7 @@ public class Class1
 	    private int _cvv;
 
 	    #endregion
-
+         
         #region Constructor
 
         public Payment(string navn, string adresse, int postnummer, string emailAdresse, int telefonnummer, int kortnummer,
