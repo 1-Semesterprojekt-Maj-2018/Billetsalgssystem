@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Info\Domain\FilmCatalog.cs" />
     <Compile Include="Info\Domain\Film.cs" />
+    <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModels\FrontpageViewmodel.cs" />
     <Compile Include="Views\App\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

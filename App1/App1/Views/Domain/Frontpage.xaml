@@ -23,7 +23,7 @@
     <StackPanel Orientation="Horizontal">
         <!-- Film valg -->
         <StackPanel>
-            <ListView ItemsSource="{Binding Filmliste.Films}">
+            <ListView ItemsSource="{Binding Filmliste.Films}" SelectedItem="{Binding SelectedFilm, Mode=TwoWay}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -41,12 +41,11 @@
             
         <!-- Info -->
             <StackPanel Orientation="Horizontal" Background="BlanchedAlmond">
-                <Image Source="{Binding Filmliste.Films}"
+                <Image Source="{Binding SelectedFilm.Billede}"
                        VerticalAlignment="Top" Margin="10,10,10,10" Height="200" Width="200"/>
                 <StackPanel Margin="20,20,20,20">
-                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
-                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
-                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Titel}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Længde}"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>
