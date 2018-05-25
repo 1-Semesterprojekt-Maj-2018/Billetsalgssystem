@@ -21,10 +21,10 @@ namespace App1.Info.Domain
         {
             _films = new List<Film>();
 
-            _films.Add(new Film("Deadpool", 1.59, "..\\Assets\\Deadpool2.jpg"));
-            _films.Add(new Film("Solo star wars", 2.15, "..\\Assets\\SOlo starwars.jpg"));
-            _films.Add(new Film("Sankt bernhard syndikatet", 1.40, "..\\Assets\\sankt-bernhard-syndikatet.jpg"));
-            _films.Add(new Film("Mit grønland", 1.34, "..\\Assets\\mit-groenland-plakat.jpg"));
+            _films.Add(new Film("Deadpool", 1.59, "Image/Deadpool 2.jpg"));
+            _films.Add(new Film("Solo star wars", 2.15, "Image/SOlo starwars.jpg"));
+            _films.Add(new Film("Sankt bernhard syndikatet", 1.40, "Image/sankt-bernhard-syndikatet.jpg"));
+            _films.Add(new Film("Mit grønland", 1.34, "Image/mit-groenland-plakat.jpg"));
 
         }
         public List<Film> Films

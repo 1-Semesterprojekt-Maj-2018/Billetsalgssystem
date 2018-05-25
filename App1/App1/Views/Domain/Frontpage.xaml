@@ -21,7 +21,7 @@
     </Page.Resources>
 
     <StackPanel Orientation="Horizontal">
-        <!-- Master Part -->
+        <!-- Film valg -->
         <StackPanel>
             <ListView ItemsSource="{Binding Filmliste.Films}">
                 <ListView.ItemTemplate>
@@ -32,10 +32,26 @@
                             <TextBlock Text="{Binding Titel}" 
                                        FontSize="18" VerticalAlignment="Center" Margin="10,10,10,10"/>
                         </StackPanel>
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackPanel>
+        <StackPanel>
+            
+        <!-- Info -->
+            <StackPanel Orientation="Horizontal" Background="BlanchedAlmond">
+                <Image Source="{Binding Filmliste.Films}"
+                       VerticalAlignment="Top" Margin="10,10,10,10" Height="200" Width="200"/>
+                <StackPanel Margin="20,20,20,20">
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding Filmliste}"/>
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
+    </StackPanel>
+    
+        
 
 </Page>

@@ -25,7 +25,7 @@
                     OpenPaneLength="150"
                     SelectedItem ="{Binding SelectedMenuItem, Mode=OneWay}">
         <NavigationView.MenuItems>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Film" Tag="OpenMovieView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Film" Tag="OpenFrontpage"/>
             <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Calendar" Content="Dato/Antal" Tag="OpenTheaterView"/>
             <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Paste" Content="Betaling" Tag="OpenShowView"/>
             <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Page" Content="Kvittering" Tag="OpenShowView"/>
