@@ -14,15 +14,15 @@ namespace App1.Info.Domain
         #region instance fields
 
         private string _titel;
-        private double _længde;
+        private string _info;
         private string _billede;
         #endregion
 
         #region Constuctor
-        public Film(string titel, double længde, string billede)
+        public Film(string titel, string info, string billede)
         {
             _titel = titel;
-            _længde = længde;
+            _info = info;
             _billede = billede;
         }
         #endregion
@@ -35,9 +35,9 @@ namespace App1.Info.Domain
             get { return _titel; }
         }
 
-        public double Længde
+        public string Info
         {
-            get { return _længde; }
+            get { return _info; }
         }
 
         public string Billede
