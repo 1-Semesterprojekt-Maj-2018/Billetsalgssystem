@@ -123,6 +123,10 @@
     <None Include="App1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Image\Deadpool 2.jpg" />
+    <Content Include="Assets\Image\mit-groenland-plakat.jpg" />
+    <Content Include="Assets\Image\sankt-bernhard-syndikatet.jpg" />
+    <Content Include="Assets\Image\SOlo starwars.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -168,7 +172,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\NewFolder1\" />
     <Folder Include="Info\Base\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

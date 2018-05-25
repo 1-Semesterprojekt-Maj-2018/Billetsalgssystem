@@ -23,21 +23,19 @@
     <StackPanel Orientation="Horizontal">
         <!-- Master Part -->
         <StackPanel>
-            <ListView ItemsSource="{Binding FrontpageViewmodel}"
-                      SelectedItem="{Binding StudentItemViewModelSelected, Mode=TwoWay}" SelectionChanged="ListView_SelectionChanged">
+            <ListView ItemsSource="{Binding Filmliste.Films}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Image Source="{Binding ImageSource}" 
+                            <Image Source="{Binding Billede}" 
                                    Height="80" Width="80"/>
-                            <TextBlock Text="{Binding Description}" 
+                            <TextBlock Text="{Binding Titel}" 
                                        FontSize="18" VerticalAlignment="Center" Margin="10,10,10,10"/>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button Content="Delete" Style="{StaticResource ButtonStyle}"
-                    Command="{Binding DeletionCommand}"/>
+        </StackPanel>
         </StackPanel>
 
 </Page>
