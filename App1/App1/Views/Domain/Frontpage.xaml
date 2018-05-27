@@ -6,6 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:App1.ViewModels"
+    xmlns:viewModels1="using:App1p.ViewModels"
+
     mc:Ignorable="d">
 
     <Page.DataContext>

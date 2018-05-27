@@ -5,11 +5,13 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using BioApp.Annotations;
-using BioApp.Info.Domain;
-using BioApp.Annotations;
+using App1.Annotations;
+using App1.Info.Domain;
+using App1.Annotations;
+using App1.Info.Domain;
+using App1.Annotations;
 
-namespace BioApp.ViewModels
+namespace App1.ViewModels
 {
     class FrontpageViewmodel : INotifyPropertyChanged
     {
@@ -38,6 +40,7 @@ namespace BioApp.ViewModels
 
         }
 
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -46,3 +49,4 @@ namespace BioApp.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }
+}
