@@ -90,6 +90,7 @@
             <StackPanel Grid.Column="2" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}">
                 <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Oversigt over valgte film" FontSize="10"  Width="500"/>
             </StackPanel>
-              
+        
+
     </Grid>
 </Page>
