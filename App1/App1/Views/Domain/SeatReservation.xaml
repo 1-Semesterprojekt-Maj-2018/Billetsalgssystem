@@ -2,10 +2,13 @@
     x:Class="App1.Views.Domain.SeatReservation"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:App1.Views.Domain"
+    xmlns:local="using:App1.ViewModels.App"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+ <Page.DataContext>
+     <local:ReservationViewmodel/>
+ </Page.DataContext>
 
     <Page.Resources>
         <ResourceDictionary>
@@ -35,7 +38,7 @@
                 <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" 
                            Text="Dato/tidspunkt" />
                 <CalendarDatePicker Style="{StaticResource CalendarDatePickerStyle}"
-                                    Date="{Binding ItemDetails.DateForShow, Mode=TwoWay}"/>
+                                    Date="{Binding DateForShow, Mode=TwoWay}"/>
             </StackPanel>
 
             <!-- Antal personer -->
@@ -43,9 +46,9 @@
                 <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" 
                            Text="Antal personer" />
                 <TextBlock Style="{StaticResource TextBlockItemHeaderStyle}" 
-                           Text="{Binding ItemDetails.NoOfSeats}" />
+                           Text="{Binding NumberOfReservations}" />
                 <Slider Style="{StaticResource SliderStyle}" Minimum="1" Maximum="8"
-                        Value="{Binding ItemDetails.NoOfSeats, Mode=TwoWay}" />
+                        Value="{Binding NumberReservation, Mode=TwoWay}" />
             </StackPanel>
 
 
