@@ -132,9 +132,20 @@
     <Content Include="Libs\Extensions.dll" />
     <Content Include="Libs\Model.dll" />
     <Content Include="Libs\ViewModel.dll" />
-    <Content Include="Views\Domain\Image\De blinkende lygter.jpg" />
+    <Content Include="Views\Domain\Image\Dankort.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Domain\Image\De blinkende lygter.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Domain\Image\Deadpool 2.jpg" />
+    <Content Include="Views\Domain\Image\Mastercard.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Domain\Image\mit-groenland-plakat.jpg" />
+    <Content Include="Views\Domain\Image\Mobilepay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Domain\Image\sankt-bernhard-syndikatet.jpg" />
     <Content Include="Views\Domain\Image\SOlo starwars.jpg" />
     <Content Include="Properties\Default.rd.xml" />
@@ -145,6 +156,9 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="Views\Domain\Image\Visa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Views\Domain\Image\Warcraft.jpg" />
   </ItemGroup>
   <ItemGroup>
