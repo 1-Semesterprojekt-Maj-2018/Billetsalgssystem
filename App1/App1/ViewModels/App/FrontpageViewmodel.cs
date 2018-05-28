@@ -19,6 +19,7 @@ namespace App1.ViewModels
         {
             _filmCatalog = new FilmCatalog();
             _selectedFilm = Filmliste.Films[0];
+            ReservationCatalog.Instance.CreateNewReservation();
         }
 
         public FilmCatalog Filmliste

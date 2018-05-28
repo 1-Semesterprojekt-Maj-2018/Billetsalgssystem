@@ -12,14 +12,12 @@ namespace App1.ViewModels.App
 {
     class ReservationViewmodel : INotifyPropertyChanged
     {
-        private ReservationCatalog _reservationCatalog;
         private int _noOfReservations;
 
         public ReservationViewmodel()
         {
             _noOfReservations = 1;
-            _reservationCatalog = new ReservationCatalog();
-            _reservationCatalog.CreateNewReservation();
+            // ReservationCatalog.Instance.CreateNewReservation();
         }
 
         public int NoOfReservations
@@ -28,7 +26,7 @@ namespace App1.ViewModels.App
             set
             {
                 _noOfReservations = value;
-                _reservationCatalog.SetNoOfReservations(value);
+                ReservationCatalog.Instance.SetNoOfReservations(value);
                 OnPropertyChanged();
             }
         }
