@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App1.Info.Domain
 {
-    class Payment
+    public class Payment
     {
         #region Instance fields
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace App1.Info.Domain
 {
-    class PaymentCatalog
+    public class PaymentCatalog
     {
         private static PaymentCatalog _instance;
 
@@ -35,6 +35,5 @@ namespace App1.Info.Domain
         {
             _payments.Insert(0, new Payment(("Navn"),("Adresse"),0,("Email"),0,0,0,0));
         }
-
     }
 }
