@@ -20,8 +20,10 @@ namespace App1.ViewModels.App
 
         public string KviiteringsText
         {
-            get { return $"DU har købt billet til {KvitteringCatalog.Instance.Kvitterings[0].Film.Titel}"; }
+            get { return $"Du har købt billet til {KvitteringCatalog.Instance.Kvitterings[0].Film.Titel}"; }
         }
+
+
 
         public string ImageSource
         {

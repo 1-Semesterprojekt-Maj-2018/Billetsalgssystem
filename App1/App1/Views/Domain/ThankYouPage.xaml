@@ -15,9 +15,11 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="331*"/>
             <RowDefinition Height="669*"/>
+            <RowDefinition Height="300*"/>
         </Grid.RowDefinitions>
         <Image Grid.Row="0" Source="{Binding ImageSource}"/>
-      <TextBlock Grid.Row="1" Style="{StaticResource BaseTextBlockStyle}" Text="{Binding KviiteringsText}"/>
+      <TextBlock Grid.Row="1" Style="{StaticResource BaseTextBlockStyle}" Text="{Binding KviiteringsText}" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="2" Style="{StaticResource BaseTextBlockStyle}" Text="{Binding AntalPersoner}" HorizontalAlignment="Center"/>
 
     </Grid>
 </Page>
