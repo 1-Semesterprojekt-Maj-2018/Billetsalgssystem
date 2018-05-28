@@ -8,9 +8,20 @@ namespace App1.Info.Domain
 {
    public class ReservationCatalog
    {
+       private static ReservationCatalog _instance;
+
+       public static ReservationCatalog Instance
+       {
+           get
+           {
+               _instance = _instance == null ? new ReservationCatalog() : _instance;
+               return _instance;
+           }
+       }
+
        private List<Reservation> _reservations;
 
-       public ReservationCatalog()
+       private ReservationCatalog()
        {
            _reservations = new List<Reservation>();
 
