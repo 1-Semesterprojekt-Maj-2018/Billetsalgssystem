@@ -26,5 +26,10 @@ namespace App1.Views.Domain
         {
             this.InitializeComponent();
         }
+
+        private void To_ThankYou(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.Domain.ThankYouPage));
+        }
     }
 }

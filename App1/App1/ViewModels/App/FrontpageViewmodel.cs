@@ -7,9 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using App1.Annotations;
 using App1.Info.Domain;
-using App1.Annotations;
-using App1.Info.Domain;
-using App1.Annotations;
 
 namespace App1.ViewModels
 {
