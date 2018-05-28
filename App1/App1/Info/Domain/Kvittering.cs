@@ -10,31 +10,34 @@ namespace App1.Info.Domain
     public class Kvittering
     {
 
-        private string _Film;
-        private int _Reservation;
-        private string _Payment;
+        private Film _Film;
+        private Reservation _Reservation;
+        private Payment _Payment;
 
-        public Kvittering(string film, int reservation, string payment)
+        public Kvittering(Film film, Reservation reservation, Payment payment)
         {
             _Film = film;
             _Reservation = reservation;
             _Payment = payment;
         }
 
-        public string Film
+        public Film Film
         {
             get { return _Film; }
+            set { _Film = value; }
         }
 
-        public int Reservation
+        public Reservation Reservation
         {
             get { return _Reservation; }
+            set { _Reservation = value; }
 
         }
 
-        public string Payment
+        public Payment Payment
         {
             get { return _Payment; }
+            set { _Payment = value; }
         }
     }
 }

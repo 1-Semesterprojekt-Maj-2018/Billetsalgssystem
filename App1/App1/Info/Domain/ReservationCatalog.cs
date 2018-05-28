@@ -42,7 +42,13 @@ namespace App1.Info.Domain
        {
            _reservations[0].AntalPersoner = noOfReservations;
        }
-   }
+
+       public void SetTidspunkt(DateTime settidspunkt)
+       {
+           _reservations[0].Dato = settidspunkt;
+       }
+
+    }
 
 
 }

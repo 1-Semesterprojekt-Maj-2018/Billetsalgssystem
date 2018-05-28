@@ -26,12 +26,12 @@ namespace App1.Info.Domain
             _kvitteringer = new List<Kvittering>();
 
         }
-        public List<Kvittering> Payments
+        public List<Kvittering> Kvitterings
         {
             get { return _kvitteringer; }
         }
 
-        public void CreateNewPayment()
+        public void CreateNewKvittering()
         {
             _kvitteringer.Insert(0, new Kvittering(null,null,null));
         }
@@ -46,7 +46,7 @@ namespace App1.Info.Domain
             _kvitteringer[0].Payment = payment;
         }
 
-        public void Createreservation(Reservation reservation)
+        public void Setreservation(Reservation reservation)
         {
             _kvitteringer[0].Reservation = reservation;
         }

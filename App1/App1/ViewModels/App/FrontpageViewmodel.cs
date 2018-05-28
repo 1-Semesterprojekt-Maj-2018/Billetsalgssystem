@@ -19,7 +19,7 @@ namespace App1.ViewModels
         {
             _filmCatalog = new FilmCatalog();
             _selectedFilm = Filmliste.Films[0];
-            ReservationCatalog.Instance.CreateNewReservation();
+            KvitteringCatalog.Instance.CreateNewKvittering();
         }
 
         public FilmCatalog Filmliste
@@ -33,6 +33,7 @@ namespace App1.ViewModels
             set
             {
                 _selectedFilm = value;
+                KvitteringCatalog.Instance.Kvitterings[0].Film = _selectedFilm;
                 OnPropertyChanged();
             }
 
