@@ -26,5 +26,10 @@ namespace App1.Views.Domain
         {
             this.InitializeComponent();
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
