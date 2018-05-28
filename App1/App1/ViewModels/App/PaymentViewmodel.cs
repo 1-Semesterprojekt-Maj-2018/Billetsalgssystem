@@ -16,6 +16,7 @@ namespace App1.ViewModels.App
         public PaymentViewmodel()
         {
             PaymentCatalog.Instance.CreateNewPayment();
+            KvitteringCatalog.Instance.Setpayment(PaymentCatalog.Instance.Payments[0]);
         }
 
         public string Name
