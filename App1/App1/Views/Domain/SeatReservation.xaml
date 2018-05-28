@@ -23,7 +23,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="0" Grid.Column="1">
-            <Button Content="Ok" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,43,32" Width="100" Click="To_PaymentView" />
+            <Button Content="Ok" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,43,32" Width="100"/>
             <Button Content="Tilbage" HorizontalAlignment="left" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,0,32" Width="120"/>
         </Grid>
 

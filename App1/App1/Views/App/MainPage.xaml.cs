@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1.ViewModels.App;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,10 @@ namespace App1
         public MainPage()
         {
             this.InitializeComponent();
+
+            // This line initialises the AppViewModel with a reference to
+            // the named Frame element in the view.
+            ((AppViewModel)DataContext).SetAppFrame(AppFrame);
         }
     }
 }
