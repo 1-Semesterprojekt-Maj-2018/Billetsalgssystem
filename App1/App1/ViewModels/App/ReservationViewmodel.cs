@@ -11,14 +11,27 @@ using App1.Info.Domain;
 namespace App1.ViewModels.App
 {
     class ReservationViewmodel : INotifyPropertyChanged
-    { 
-        private ReservationCatalog
-   
-     
+    {
+        private ReservationCatalog _reservationCatalog;
+        private int _noOfReservations;
 
+        public ReservationViewmodel()
+        {
+            _noOfReservations = 1;
+            _reservationCatalog = new ReservationCatalog();
+            _reservationCatalog.CreateNewReservation();
+        }
 
-
-
+        public int NoOfReservations
+        {
+            get { return _noOfReservations; }
+            set
+            {
+                _noOfReservations = value;
+                _reservationCatalog.SetNoOfReservations(value);
+                OnPropertyChanged();
+            }
+        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;

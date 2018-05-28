@@ -20,6 +20,17 @@ namespace App1.Info.Domain
        {
            get { return _reservations; }
        }
+
+
+       public void CreateNewReservation()
+       {
+           _reservations.Insert(0, new Reservation(DateTime.Now,0));
+       }
+
+       public void SetNoOfReservations(int noOfReservations)
+       {
+           _reservations[0].AntalPersoner = noOfReservations;
+       }
    }
 
 
