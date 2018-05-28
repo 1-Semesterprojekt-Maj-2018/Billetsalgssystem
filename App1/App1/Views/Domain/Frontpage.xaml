@@ -5,15 +5,56 @@
     xmlns:local="using:App1.Views.Domain"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="using:App1.ViewModels"
+    xmlns:viewModels1="using:App1p.ViewModels"
+
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="292,232,0,0"/>
-        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,232,0,0" />
-        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="292,568,0,0"/>
-        <Image HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="100" Margin="0,568,0,0"/>
-        <TextBlock Text=" Info om filmen" FontSize="36" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,110,694" RenderTransformOrigin="0.486,0.583"/>
-        <Button Content="Ok" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,43,32" Width="100" Tag="OpenMovieView"/>
-        <Button Content="Tilbage" HorizontalAlignment="left" VerticalAlignment="Bottom" FontSize="30" Margin="0,0,0,32" Width="120"/>
-    </Grid>
+    <Page.DataContext>
+        <viewModels:FrontpageViewmodel/>
+    </Page.DataContext>
+
+    <Page.Resources>
+        <Style x:Key="TextBlockStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Margin" Value="20,20,20,20"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Orientation="Horizontal">
+        <!-- Film valg -->
+
+        <StackPanel>
+            <ListView ItemsSource="{Binding Filmliste.Films}" SelectedItem="{Binding SelectedFilm, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Billede}" 
+                                   Height="160" Width="150"/>
+                            <TextBlock Text="{Binding Titel}" 
+                                       FontSize="18" VerticalAlignment="Center" Margin="10,10,10,10"/>
+                        </StackPanel>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>
+        <StackPanel>
+            
+        <!-- Info -->
+            <StackPanel Orientation="Horizontal" Background="BlanchedAlmond">
+                <Image Source="{Binding SelectedFilm.Billede}"
+                       VerticalAlignment="Top" Margin="10,10,10,10" Height="950" Width="200"/>
+                <StackPanel Margin="20,20,20,20">
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Titel}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Info}"/>
+                    <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding SelectedFilm.Beskrivelse}" Height="700"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+    
+        
+
 </Page>
