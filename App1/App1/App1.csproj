@@ -97,6 +97,8 @@
     </Compile>
     <Compile Include="Info\Domain\FilmCatalog.cs" />
     <Compile Include="Info\Domain\Film.cs" />
+    <Compile Include="Info\Domain\Kvittering.cs" />
+    <Compile Include="Info\Domain\KvitteringCatalog.cs" />
     <Compile Include="Info\Domain\Payment.cs" />
     <Compile Include="Info\Domain\PaymentCatalog.cs" />
     <Compile Include="Info\Domain\Reservation.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModels\App\AppViewModel.cs" />
     <Compile Include="ViewModels\App\FrontpageViewmodel.cs" />
+    <Compile Include="ViewModels\App\KvitteringViewmodel.cs" />
     <Compile Include="ViewModels\App\PaymentViewmodel.cs" />
     <Compile Include="ViewModels\App\ReservationViewmodel.cs" />
     <Compile Include="Views\App\MainPage.xaml.cs">
