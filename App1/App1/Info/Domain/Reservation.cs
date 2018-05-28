@@ -12,7 +12,7 @@ namespace App1.Info.Domain
   public class Reservation
   {
       private DateTime _dato;
-      private int _antalPersoner;
+      private int _antalPersoner; 
 
       public Reservation(DateTime dato, int antalpersoner)
       {

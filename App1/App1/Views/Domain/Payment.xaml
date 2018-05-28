@@ -8,8 +8,9 @@
   mc:Ignorable="d">
 
     <Page.DataContext>
-        <local:PaymentViewmodel/>
+        <app:PaymentViewmodel/>
     </Page.DataContext>
+
     <Page.Resources>
 
       <ResourceDictionary>
@@ -39,7 +40,7 @@
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld personlige oplysninger" FontSize="10" Width="500"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Fulde navn:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding Name}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Adresse:" FontSize="10" Width="500"/>
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
