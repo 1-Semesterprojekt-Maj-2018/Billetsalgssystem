@@ -2,8 +2,8 @@
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 //using App1.Models.App;
-//using Commands.Implementation;
-//using ViewModel.App.Implementation;
+using Commands.Implementation;
+using ViewModel.App.Implementation;
 
 namespace App1.ViewModels.App
 {
@@ -62,34 +62,24 @@ namespace App1.ViewModels.App
         /// </summary>
         public override void AddCommands()
         {
-            NavigationCommands.Add("OpenMovieView", new RelayCommand(() =>
+            NavigationCommands.Add("ShowMovie", new RelayCommand(() =>
             {
-                AppFrame.Navigate(typeof(Views.Domain.MovieView));
+                AppFrame.Navigate(typeof(Views.Domain.Frontpage));
             }));
 
-            NavigationCommands.Add("OpenTheaterView", new RelayCommand(() =>
+            NavigationCommands.Add("ShowReservation", new RelayCommand(() =>
             {
-                AppFrame.Navigate(typeof(Views.Domain.TheaterView));
+                AppFrame.Navigate(typeof(Views.Domain.SeatReservation));
             }));
 
-            NavigationCommands.Add("OpenShowView", new RelayCommand(() =>
+            NavigationCommands.Add("ShowPayment", new RelayCommand(() =>
             {
-                AppFrame.Navigate(typeof(Views.Domain.ShowView));
+                AppFrame.Navigate(typeof(Views.Domain.Payment));
             }));
 
-            NavigationCommands.Add("Quit", new RelayCommand(() =>
+            NavigationCommands.Add("ShowReceipt", new RelayCommand(() =>
             {
-                Application.Current.Exit();
-            }));
-
-            NavigationCommands.Add("Load", new RelayCommand(() =>
-            {
-                DomainModel.Instance.LoadAsync();
-            }));
-
-            NavigationCommands.Add("Save", new RelayCommand(() =>
-            {
-                DomainModel.Instance.SaveAsync();
+                AppFrame.Navigate(typeof(Views.Domain.ThankYouPage));
             }));
         } 
         #endregion

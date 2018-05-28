@@ -23,12 +23,12 @@
     <NavigationView Header="Nordisk Biograf"
                     Background="{ThemeResource SystemControlAcrylicWindowBrush}"
                     OpenPaneLength="150"
-                    SelectedItem ="{Binding SelectedMenuItem, Mode=OneWay}">
+                    SelectedItem ="{Binding SelectedMenuItem, Mode=TwoWay}">
         <NavigationView.MenuItems>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Film" Tag="OpenMovieView"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Calendar" Content="Dato/Antal" Tag="OpenTheaterView"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Paste" Content="Betaling" Tag="OpenShowView"/>
-            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Page" Content="Kvittering" Tag="OpenShowView"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Memo" Content="Film" Tag="ShowMovie"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Calendar" Content="Dato/Antal" Tag="ShowReservation"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Paste" Content="Betaling" Tag="ShowPayment"/>
+            <NavigationViewItem Style="{StaticResource NavigationViewItemStyle}" Icon="Page" Content="Kvittering" Tag="ShowReceipt"/>
         </NavigationView.MenuItems>
 
         <Frame x:Name="AppFrame">

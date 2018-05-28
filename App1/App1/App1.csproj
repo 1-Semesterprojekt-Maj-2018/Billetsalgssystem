@@ -120,6 +120,14 @@
     <None Include="App1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Libs\AddOns.dll" />
+    <Content Include="Libs\Commands.dll" />
+    <Content Include="Libs\Controllers.dll" />
+    <Content Include="Libs\Data.dll" />
+    <Content Include="Libs\DataSources.dll" />
+    <Content Include="Libs\Extensions.dll" />
+    <Content Include="Libs\Model.dll" />
+    <Content Include="Libs\ViewModel.dll" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -164,7 +172,40 @@
       <Version>6.0.8</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="AddOns, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\AddOns.dll</HintPath>
+    </Reference>
+    <Reference Include="Commands, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Commands.dll</HintPath>
+    </Reference>
+    <Reference Include="Controllers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Controllers.dll</HintPath>
+    </Reference>
+    <Reference Include="Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Data.dll</HintPath>
+    </Reference>
+    <Reference Include="DataSources, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\DataSources.dll</HintPath>
+    </Reference>
+    <Reference Include="Extensions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Model.dll</HintPath>
+    </Reference>
+    <Reference Include="ViewModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\ViewModel.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

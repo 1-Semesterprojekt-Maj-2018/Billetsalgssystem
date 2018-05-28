@@ -26,5 +26,6 @@ namespace App1.Views.Domain
         {
             this.InitializeComponent();
         }
+        
     }
 }
