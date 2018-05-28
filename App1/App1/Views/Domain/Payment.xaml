@@ -20,7 +20,7 @@
       </ResourceDictionary>
     </Page.Resources>
 
-            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="1000" VerticalAlignment="Bottom">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="650" VerticalAlignment="Bottom">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" MinWidth="200"/>
                 <ColumnDefinition Width="Auto" MinWidth="200"/>
@@ -34,25 +34,24 @@
             <StackPanel Grid.Column="0" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}" Grid.ColumnSpan="3" Margin="0,0,1000,0"/>
 
             <!--Udfyld personoplysninger-->
-            <StackPanel Grid.Column="1" Grid.Row="0" Style="{StaticResource StackPanelItemTemplateStyle}" Margin="0,0,0,0" >
-            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Nordisk Biograf" FontSize="15"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Style="{StaticResource StackPanelItemTemplateStyle}" Margin="0,0,0,0" >
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld personlige oplysninger" FontSize="10" Width="500"/>
 
-            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Fulde navn:" FontSize="10" Width="500"/>
+            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Fulde navn:" FontSize="10" Width="500"/>-->
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding Name}"/>
 
-            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Adresse:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Adresse:" FontSize="10" Width="500"/>-->
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameAddress}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Postnummer:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameZipCode}"/>
 
-            <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Email:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Email:" FontSize="10" Width="500"/>-->
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameEmail}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Telefon Nr.:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NamePhoneNumber}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld dine betalingsoplysninger" FontSize="10" />
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Vælg betalingsmetode:" FontSize="10" Width="200" Margin="0,0,0,0"/>
@@ -62,41 +61,32 @@
                 <Button Width="60" Height="40" Margin="0,0,225,0" HorizontalAlignment="Stretch" Background="White">
                     <Image Source="Image/Dankort.png" Width="40" Height="40"/>
                 </Button>
-              
+
                 <Button Width="60" Height="40" Margin="0,0,75,0"  HorizontalAlignment="Stretch" Background="White">
                     <Image Source="Image/Mastercard.jpg" Stretch="UniformToFill"/>
                 </Button>
-              
+
                 <Button Width="60" Height="40" Margin="75,0,0,0" HorizontalAlignment="Stretch" Background="White">
                     <Image Source="Image/Mobilepay.png" Stretch="UniformToFill"/>
                 </Button>
-              
+
                 <Button Width="60" Height="40" Margin="225,0,0,0" HorizontalAlignment="Stretch" Background="White">
                     <Image Source="Image/Visa.jpg" Stretch="UniformToFill"/>
                 </Button>
             </Grid>
-          
+
             <!--Udfyld betalingsoplysninger-->
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Kortnummer:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameCardNumber}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Kortets udløb MM/ÅÅ:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" Text="  /  " FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameCardExpire}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="CVV:" FontSize="10" Width="500"/>
-            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10"/>
+            <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameCvv}"/>
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" FontSize="10"/>
 
-            <StackPanel Margin="0,0,0,0">
-                <Button Content="Videre" Background="LightBlue" HorizontalAlignment="Stretch" Width="500"/>
-            </StackPanel>
 
-            </StackPanel>
-
-            <StackPanel Grid.Column="2" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}">
-                <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Oversigt over valgte film" FontSize="10"  Width="500"/>
-            </StackPanel>
-        
-
+        </StackPanel>
     </Grid>
 </Page>
