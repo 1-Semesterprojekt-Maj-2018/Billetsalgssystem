@@ -34,27 +34,23 @@
             <StackPanel Grid.Column="0" Grid.Row="0" Style="{StaticResource StackPanelDetailsMidStyle}" Grid.ColumnSpan="3" Margin="0,0,1000,0"/>
 
             <!--Udfyld personoplysninger-->
-        <StackPanel Grid.Column="1" Grid.Row="0" Style="{StaticResource StackPanelItemTemplateStyle}" Margin="0,0,0,0" >
+            <StackPanel Grid.Column="1" Grid.Row="0" Style="{StaticResource StackPanelItemTemplateStyle}" Margin="0,0,0,0" >
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld personlige oplysninger" FontSize="15" Width="500"/>
 
-            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Fulde navn:" FontSize="10" Width="500"/>-->
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding Name}"/>
 
-            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Adresse:" FontSize="10" Width="500"/>-->
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameAddress}" Margin="0,20,0,0"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Postnummer:" FontSize="10" Width="500"/>
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameZipCode}"/>
 
-            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Email:" FontSize="10" Width="500"/>-->
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NameEmail}" Margin="0,20,0,0"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Telefon Nr.:" FontSize="10" Width="500"/>
             <TextBox Style="{StaticResource TextBoxDetailsStyle}" FontSize="10" Text="{Binding NamePhoneNumber}"/>
 
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Udfyld dine betalingsoplysninger" FontSize="10" />
-            <!--<TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" Text="Vælg betalingsmetode:" FontSize="10" Width="200" Margin="0,0,0,0"/>-->
 
             <!--Vælg betalingsmetode-->
             <Grid VerticalAlignment="Top" Width="500">
@@ -87,6 +83,6 @@
             <TextBlock Style="{StaticResource TextBlockDetailsHeaderStyle}" FontSize="10"/>
 
 
-        </StackPanel>
-    </Grid>
+            </StackPanel>
+            </Grid>
 </Page>
