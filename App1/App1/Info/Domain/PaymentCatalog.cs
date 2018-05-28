@@ -26,14 +26,14 @@ namespace App1.Info.Domain
             _payments = new List<Payment>();
 
         }
-        public List<Reservation> Reservations
+        public List<Payment> Payments
         {
-            get { return _reservations; }
+            get { return _payments; }
         }
 
-        public void CreateNewReservation()
+        public void CreateNewPayment()
         {
-            _reservations.Insert(0, new Reservation(DateTime.Now, 0));
+            _payments.Insert(0, new Payment(("Navn"),("Adresse"),0,("Email"),0,0,0,0));
         }
 
     }
