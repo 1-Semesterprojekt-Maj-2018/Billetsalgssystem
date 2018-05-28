@@ -33,7 +33,22 @@ namespace App1.Info.Domain
 
         public void CreateNewPayment()
         {
-            _kvitteringer.Insert(0, new Kvittering(("Film"),0,("payment")));
+            _kvitteringer.Insert(0, new Kvittering(null,null,null));
+        }
+
+        public void Setmoviechoice(Film film)
+        {
+            _kvitteringer[0].Film = film;
+        }
+
+        public void Setpayment(Payment payment)
+        {
+            _kvitteringer[0].Payment = payment;
+        }
+
+        public void Createreservation(Reservation reservation)
+        {
+            _kvitteringer[0].Reservation = reservation;
         }
     }
 }
