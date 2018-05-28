@@ -98,6 +98,7 @@
     <Compile Include="Info\Domain\FilmCatalog.cs" />
     <Compile Include="Info\Domain\Film.cs" />
     <Compile Include="Info\Domain\Reservation.cs" />
+    <Compile Include="Info\Domain\ReservationCatalog.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="ViewModels\AppViewModel.cs" />
     <Compile Include="ViewModels\App\FrontpageViewmodel.cs" />

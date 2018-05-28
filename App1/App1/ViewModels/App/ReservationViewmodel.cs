@@ -6,24 +6,17 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using App1.Annotations;
+using App1.Info.Domain;
 
 namespace App1.ViewModels.App
 {
     class ReservationViewmodel : INotifyPropertyChanged
+    { 
+        private ReservationCatalog
+   
+     
 
-    private ReservationDataViewModel _selectedDato;
 
-    
-    {
-        public DateTimeOffset DateForShow
-        {
-            get { return DateForShow; }
-            set
-            {
-                 = value.Dato;
-                OnPropertyChanged();
-            }
-        }
 
 
 
