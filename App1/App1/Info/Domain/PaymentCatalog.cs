@@ -33,7 +33,7 @@ namespace App1.Info.Domain
 
         public void CreateNewPayment()
         {
-            _payments.Insert(0, new Payment(("Udfyld dit fulde navn"),("Udfyld din adresse"), 0,("Udfyld din email adresse"),0,0,0,0));
+            _payments.Insert(0, new Payment(("Udfyld dit fulde navn.."),("Udfyld din adresse.."), 0,("Udfyld din email adresse.."),0,0,0,0));
         }
     }
 }
